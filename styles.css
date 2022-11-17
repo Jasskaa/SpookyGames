@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#videojocs-historia img {
+    width: 190px;
+    height: 110px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(nav.jpg);
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header {
+    height: 100vh;
+    background-image: url(blue.jpg);
+    background-size: cover;
+    padding: auto;
+}
+
+h1 {
+    top: 280px;
+    position: relative;
+    font-family: 'Fruktur', cursive;
+    font-size: 230px;
+    color: rgba(255, 255, 255, 0.1);
+    animation: animateText 5s linear infinite;
+}
+
+@keyframes animateText {
+
+    0%,
+    7%,
+    18%,
+    20%,
+    30%,
+    40%,
+    60%,
+    80%,
+    98% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: none;
+    }
+
+    7.3%,
+    18.1%,
+    20.1%,
+    30.5%,
+    40.2%,
+    60.2%,
+    80.1%,
+    98.3%,
+    100% {
+        color: darkorange;
+        text-shadow: 0 0 10px #ffac09,
+            0 0 20px #09ff74,
+            0 0 40px #f709ff,
+            0 0 80px #000000,
+            0 0 160px #00aeff;
+
+    }
+}
+
+
+nav {
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+    height: 60px;
+    width: 100%;
+    background-image: url(nav.jpg);
+}
+
+a {
+    margin-top: 20px;
+    font-family: 'Choc Chip', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+em {
+    font-family: 'Choc Chip', sans-serif;
+    color: white;
+}
+
+
+.principal h2 {
+    margin: auto;
+    margin-top: 90px;
+    font-family: 'SF Wonder Comic Blotch', sans-serif;
+    font-family: 'SF Wonder Comic Inline', sans-serif;
+    font-family: 'SF Wonder Comic', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px rgb(53, 19, 221),
+        0 0 42px rgb(119, 0, 255),
+        0 0 50px rgb(93, 0, 255),
+        0 0 50px rgb(0, 4, 255),
+        0 0 50px rgb(132, 0, 255),
+        0 0 51px rgb(93, 0, 255);
+}
+
+
+.principal h3 {
+    margin-top: 50px;
+    font-family: 'Hantu Kom Kom', sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 45px;
+    padding: 20px;
+}
+
+p {
+    margin: auto;
+    font-family: 'Choc Chip', sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+    font-size: 15px;
+}
+
+li {
+    margin-top: 20px;
+    font-family: 'Choc Chip', sans-serif;
+    font-size: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-family: 'Hantu Kom Kom', sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 45px;
+    padding: 20px;
+}
+
+img {
+  transform: rotateX(30deg) rotateZ(10deg);
+  transform-style: preserve-3d;
+  transition: .3s;
+}
+img {
+  position: relative;
+}
+
+img {
+  vertical-align: bottom;
+  filter: grayscale(100%);
+  transition: .3s;
+}
+
+img::before {
+  bottom: -8px;
+  left: 0;
+  background-color: #d0d0d0;
+  width: 100%;
+  height: 16px;
+  transform: rotateX(90deg) translateY(-8px);
+}
+img::after {
+  top: 0;
+  left: -8px;
+  width: 16px;
+  height: 100%;
+  background-color: #bbb;
+  transform: rotateY(90deg) translateX(8px);
+}
+
+img:hover{
+  transform: rotate(0);
+}
+img:hover {
+  filter: grayscale(0);
+}
+
+img {
+    height: 150px;
+    width: 250px;
+    box-shadow: 0px 0px 10px 5px #ec731e;
+    border-radius: 10px;
+}
+
+img:hover{
+    mask-position: 0 0;
+    mask-position: 0 0;
+    filter: grayscale(0);
+}
+
+
+#spooky-games ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 2rem;
+    margin: auto;
+    list-style: none;
+}
+
+#best-games ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 2rem;
+    margin: auto;
+    list-style: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    text-align: center;
+    width: 800px;
+    background-image: url(Red.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-family: 'Calibri';
+    color: black;
+    box-shadow: rgb(11, 7, 125) 4px -10px 10px;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.row-2 {
+    color: wheat;
+}
+
+#fname,
+#fmail {
+    width: 20%;
+    align-self: flex-start;
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 3px solid darkred;
+    font-family: 'calibri';
+}
+
+#label {
+    top: 20px;
+}
+
+#subject {
+    align-self: flex-start;
+    width: 30%;
+    padding: 5px;
+    border-radius: 8px;
+    border: 3px solid darkred;
+    font-family: 'calibri';
+}
+
+#checkbox {
+    align-self: center;
+    width: 120px;
+    font-family: 'calibri';
+}
+
+#submit {
+    align-self: flex-end;
+}
+
+#fpolicy {
+    font-family: 'Thing Press';
+}
+
+.label h2 {
+    color: white;
+}
+
+.row-2 input {
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid;
+    border-color: red;
+    color: black;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
